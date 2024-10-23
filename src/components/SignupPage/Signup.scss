@@ -1,0 +1,103 @@
+.container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 40px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.underline {
+  width: 80px;
+  height: 3px;
+  background-color: #007bff;
+  margin: 10px auto;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.input img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.input input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.forgot-password span {
+  font-weight: bold;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submit {
+  flex: 1; /* Ensures both buttons take equal width */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit + .submit { /* Adds space between buttons */
+  margin-left: 10px;
+}
+
+.submit:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 480px) {
+  .submit-container {
+    flex-direction: column;
+  }
+
+  .submit {
+    margin-bottom: 10px; /* Adds spacing when buttons are stacked */
+  }
+
+  .submit + .submit {
+    margin-left: 0;
+  }
+}
